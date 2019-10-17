@@ -17,12 +17,13 @@ export default class SavedList extends Component {
               activeClassName="saved-active"
             >
               <span className="saved-movie">{movie.title}</span>
+              <button>Delete</button>
             </NavLink>
           );
         })}
         <div className="home-button">
           <Link to="/">Home</Link>
-        </div>
+       </div>
       </div>
     );
   }
