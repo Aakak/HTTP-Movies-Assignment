@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+
+
+
 export default class SavedList extends Component {
   constructor(props) {
     super(props);
   }
+
 
   render() {
     return (
@@ -17,7 +21,6 @@ export default class SavedList extends Component {
               activeClassName="saved-active"
             >
               <span className="saved-movie">{movie.title}</span>
-              <button>Delete</button>
             </NavLink>
           );
         })}
